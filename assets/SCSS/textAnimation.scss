@@ -1,0 +1,36 @@
+.title {
+  padding-bottom: 0px;
+}
+.title_btn {
+  padding: 10px 40px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 30px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 1px 5px rgb(179, 175, 175);
+}
+.title_btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+.cls-1, .cls-2, .cls-3 {
+  fill: none;
+  stroke: #fff;
+}
+
+.cls-1 {
+  stroke-width: 3px;
+}
+
+.cls-2 {
+  stroke-width: 15px;
+}
+.cls-3 {
+  stroke-width: 11px;
+}
+.container {
+  margin-top: 100px;
+}

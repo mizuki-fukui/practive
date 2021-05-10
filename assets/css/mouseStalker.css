@@ -1,0 +1,92 @@
+.contents {
+  padding: calc((100 / 1300) * 100%);
+  margin: 0 auto 100px;
+  width: 80%;
+  background-color: #eee;
+  text-align: center;
+}
+
+.contents_link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline-block;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+}
+
+body {
+  cursor: none;
+}
+
+body a {
+  cursor: none;
+}
+
+body a:hover {
+  cursor: none;
+}
+
+.cursor {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.cursor.is-active {
+  background-color: #eee;
+}
+
+.follower {
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  border-radius: 50%;
+  z-index: 4;
+  pointer-events: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.follower::before {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: block;
+  content: '';
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.follower.is-active {
+  background: transparent;
+}
+
+.follower.is-active::before {
+  background-color: rgba(255, 0, 0, 0.75);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+/*# sourceMappingURL=mouseStalker.css.map */

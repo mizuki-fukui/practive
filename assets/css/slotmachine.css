@@ -1,0 +1,98 @@
+.machine {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #eee;
+  border-radius: 30px;
+}
+
+.machine_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 30%;
+  text-align: center;
+}
+
+.machine_item_image {
+  margin-bottom: 20px;
+}
+
+.machine_item_image_img {
+  quotes: 100%;
+}
+
+.machine_item_button {
+  text-align: center;
+}
+
+.machine_item_button_txt {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 80%;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  background-color: red;
+  -webkit-box-shadow: 1px 5px #9b0404;
+          box-shadow: 1px 5px #9b0404;
+  border-radius: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.machine_item_button_txt:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+
+.spin {
+  text-align: center;
+}
+
+.spin_button {
+  margin: 40px auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 300px;
+  height: 80px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  background-color: green;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 8px rgba(1, 97, 1, 0.993);
+          box-shadow: 1px 8px rgba(1, 97, 1, 0.993);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.spin_button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 8px;
+}
+/*# sourceMappingURL=slotmachine.css.map */

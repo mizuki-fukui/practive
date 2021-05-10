@@ -1,0 +1,127 @@
+.contents {
+  padding-left: calc((100 / 1300) * 100vw);
+  padding-right: calc((100 / 1300) * 100vw);
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_images {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((640 / 1300) * 100vw);
+          flex: 0 0 calc((640 / 1300) * 100vw);
+  width: calc((640 / 1300) * 100vw);
+  height: calc((360 / 1300) * 100vw);
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider_images_img {
+  width: calc((640 / 1300) * 100vw);
+  height: calc((360 / 1300) * 100vw);
+  margin: auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slider_images_img.is-active {
+  display: block;
+}
+
+.slider_arrows {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  width: 10%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slider_arrows_icon {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #6e6e6e;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider_arrows_icon::before, .slider_arrows_icon::after {
+  content: '';
+  width: 20px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+}
+
+.slider_arrows_icon--lf::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 28px;
+  left: 14px;
+}
+
+.slider_arrows_icon--lf::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 17px;
+  left: 14px;
+}
+
+.slider_arrows_icon--rt::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 28px;
+  left: 16px;
+}
+
+.slider_arrows_icon--rt::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 17px;
+  left: 16px;
+}
+
+.dots {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.dots_item {
+  padding-top: 3px;
+  margin: 20px 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  background-color: #6e6e6e;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=slider.css.map */

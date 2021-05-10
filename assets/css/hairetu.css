@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+}
+
+.title_txt {
+  font-size: 30px;
+}
+
+.selectBox {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.menu_list {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_list_item {
+  margin: 10px;
+  display: inline-block;
+  list-style: none;
+}
+
+.menu_list_label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu_button {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 5px #940404;
+          box-shadow: 1px 5px #940404;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.menu_button:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top {
+  padding: 40px 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 30%;
+}
+
+.top_button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 30%;
+  text-align: center;
+}
+
+.top_button_eat {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: green;
+  -webkit-box-shadow: 1px 5px #015a01;
+          box-shadow: 1px 5px #015a01;
+}
+
+.top_button_eat:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.top_plate {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 30%;
+  position: relative;
+}
+
+.top_plate_inner {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: calc((4 / 1300) * 100vw);
+  bottom: calc((55 / 1300) * 100vw);
+  z-index: 1;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.top_plate_eatimages {
+  margin-top: calc((40 / 1300) * 100vw * -1);
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_plate_eatimages_img {
+  display: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 30%;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.top_plate_eatimages_img.is-active {
+  display: block;
+}
+
+.top_plate_out {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: calc((4 / 1300) * 100vw);
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.dog_image {
+  height: 200px;
+  position: relative;
+  background: url(/JS_PRACTICE_HTML/img/dog_hungry.png) center top/contain no-repeat;
+}
+
+.dog_image.is-animation {
+  -webkit-animation: 4s face 1s forwards;
+          animation: 4s face 1s forwards;
+}
+
+@-webkit-keyframes face {
+  0% {
+    background: url(/JS_PRACTICE_HTML/img/dog_hungry.png) center top/contain no-repeat;
+  }
+  30% {
+    background: url(/JS_PRACTICE_HTML/img/dog_eating.png) center top/contain no-repeat;
+  }
+  70% {
+    background: url(/JS_PRACTICE_HTML/img/dog_eating.png) center top/contain no-repeat;
+  }
+  100% {
+    background: url(/JS_PRACTICE_HTML/img/dog_smile.png) center top/contain no-repeat;
+  }
+}
+
+@keyframes face {
+  0% {
+    background: url(/JS_PRACTICE_HTML/img/dog_hungry.png) center top/contain no-repeat;
+  }
+  30% {
+    background: url(/JS_PRACTICE_HTML/img/dog_eating.png) center top/contain no-repeat;
+  }
+  70% {
+    background: url(/JS_PRACTICE_HTML/img/dog_eating.png) center top/contain no-repeat;
+  }
+  100% {
+    background: url(/JS_PRACTICE_HTML/img/dog_smile.png) center top/contain no-repeat;
+  }
+}
+
+.meter_label {
+  text-align: center;
+}
+
+.meter_box {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.meter_box_item {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  border-radius: 30px;
+}
+
+.meter_box_item.is-animation {
+  -webkit-animation: 4s meteranim .3s ease-in-out forwards;
+          animation: 4s meteranim .3s ease-in-out forwards;
+}
+
+@-webkit-keyframes meteranim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes meteranim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.addBox {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.addBox_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addBox_box_button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.addBox_box_button_txt {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 5px #a70303;
+          box-shadow: 1px 5px #a70303;
+}
+
+.addBox_box_button_txt:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.addBox_box_value {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+  text-align: right;
+  border-bottom: 2px solid red;
+}
+
+.addBox_box_value_num {
+  font-size: 80px;
+}
+
+.addBox_box_value_en {
+  font-size: 30px;
+}
+
+.orderButton {
+  text-align: center;
+}
+
+.orderButton_txt {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 5px #910404;
+          box-shadow: 1px 5px #910404;
+}
+
+.orderButton_txt:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 6;
+  text-align: center;
+  display: none;
+}
+
+.after.is-active {
+  display: block;
+}
+
+.after_box {
+  width: 60%;
+  height: 40%;
+  margin: 200px auto;
+  background-color: #eee;
+}
+
+.after_box_txt {
+  padding-top: 100px;
+  font-size: 40px;
+}
+
+.after_box_link {
+  width: 150px;
+  height: 50px;
+  margin-top: 60px;
+  font-size: 30px;
+  background-color: pink;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 5px #e07789;
+          box-shadow: 1px 5px #e07789;
+}
+
+.after_box_link:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.afterbutton {
+  text-align: center;
+}
+
+.afterbutton_txt {
+  padding-top: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: #4747f7;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 5px #010136;
+          box-shadow: 1px 5px #010136;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 600;
+}
+
+.afterbutton_txt:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=hairetu.css.map */

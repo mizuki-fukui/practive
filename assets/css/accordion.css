@@ -1,0 +1,75 @@
+.accordion {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 30px;
+  position: relative;
+}
+
+.accordion_button {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.accordion_button::before, .accordion_button::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #333;
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.accordion_button.is-open::before, .accordion_button.is-open:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #333;
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.accordion_button.is-open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.accordion_button.is-open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.accordion_box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.accordion_answer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.accordion_answer.open {
+  display: block;
+}
+/*# sourceMappingURL=accordion.css.map */

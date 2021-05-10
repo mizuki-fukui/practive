@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/common.css" class="css">
+  <link rel="stylesheet" href="/assets/css/slider.css" class="css">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="title">
+  <p class="title_txt">slider</p>
+</div>
+
+<div class="contents js-contents">
+  <div class="slider js-slider">
+    <div class="slider_arrows js-prev">
+      <span class="slider_arrows_icon slider_arrows_icon--lf"></span>
+    </div>
+    <div class="slider_images js-images">
+      <img
+        src="/assets/img/slider1.jpg"
+        alt=""
+        data-num="1"
+        class="slider_images_img js-img is-active">
+      <img
+        src="/assets/img/slider2.jpg"
+        alt=""
+        data-num="2"
+        class="slider_images_img js-img">
+      <img
+        src="/assets/img/slider3.jpg"
+        alt=""
+        data-num="3"
+        class="slider_images_img js-img">
+    </div>
+    <div class="slider_arrows js-next">
+      <span class="slider_arrows_icon slider_arrows_icon--rt"></span>
+    </div>
+  </div>
+  <div class="dots js-dots">
+    <span class="dots_item js-dot" data-num="1">1</span>
+    <span class="dots_item js-dot" data-num="2">2</span>
+    <span class="dots_item js-dot" data-num="3">3</span>
+  </div>
+</div>
+
+<script src="/assets/JS/slider.js"></script>
+  
+</body>
+</html>

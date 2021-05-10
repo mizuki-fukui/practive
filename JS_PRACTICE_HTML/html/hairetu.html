@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/hairetu.css" class="css">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="title">
+    <p class="title_txt">配列</p>
+  </div>
+
+  <div class="menu">
+    <form>
+      <div class="menu_list js-menu">
+        <input type="checkbox" name="fluets" id="apple" class="menu_list_item js-input" data-fluets="['apple']" data-value="100"></input>
+        <label for="apple" class="menu_list_label" data-value="100">りんご(100円)</label>
+        <input type="checkbox" name="fluets" class="menu_list_item js-input" data-fluets="['rice']" id="rice" data-value="300"></input>
+        <label for="rice" class="menu_list_label" data-value="300">おにぎり(300円)</label>
+        <input type="checkbox" name="fluets" class="menu_list_item js-input" data-fluets="['orange']" id="orange" data-value="150"></input>
+        <label for="orange" class="menu_list_label" data-value="150">みかん(150円)</label>
+      </div>
+      <!-- <input type="submit" value="order" class="menu_button js-order"> -->
+      <div class="orderButton js-order">
+        <p href="" class="orderButton_txt">button</p>
+      </div>
+    </form>
+  </div>
+
+  <div class="top js-anime">
+    <div class="top_image">
+      <div class="dog">
+        <div class="dog_image js-dog">
+        </div>
+      </div>
+      <div class="meter">
+        <p class="meter_label">はらぺこゲージ</p>
+        <div class="meter_box">
+          <div class="meter_box_item js-meter"></div>
+        </div>
+      </div>
+    </div>
+    <div class="top_button js-eat">
+      <p class="top_button_eat">eat</p>
+    </div>
+    <div class="top_plate js-imgBox">
+      <img src="/JS_PRACTICE_HTML/img/plate_inner.png" alt="" class="top_plate_inner">
+      <div class="top_plate_eatimages">
+        <img src="/JS_PRACTICE_HTML/img/apple.png" alt="" class="top_plate_eatimages_img apple js-fluetsImg" data-fluets="['apple']">
+        <img src="/JS_PRACTICE_HTML/img/rice.png" alt="" class="top_plate_eatimages_img rice js-fluetsImg" data-fluets="['rice']">
+        <img src="/JS_PRACTICE_HTML/img/orange.png" alt="" class="top_plate_eatimages_img orange js-fluetsImg" data-fluets="['orange']">
+      </div>
+      <img src="/JS_PRACTICE_HTML/img/plate_out.png" alt="" class="top_plate_out">
+    </div>
+  </div>
+  
+  <div class="addBox">
+    <div class="addBox_box">
+      <div class="addBox_box_button js-check">
+        <p class="addBox_box_button_txt">check</p>
+      </div>
+      <div class="addBox_box_value">
+        <span class="addBox_box_value_num js-num"></span>
+        <span class="addBox_box_value_en">円</span>
+      </div>
+    </div>
+    <div class="afterbutton js-afterButton">
+      <p class="afterbutton_txt">back home</p>
+    </div>
+  </div>
+
+  
+  <div class="after js-error">
+    <div class="after_box">
+      <div class="after_box_txt">まだ食べてないよ〜</div>
+      <a href="hairetu.html" class="after_box_link">もう一回</a>
+    </div>
+  </div>
+
+  <div class="after js-error2">
+    <div class="after_box">
+      <div class="after_box_txt">食い逃げ成功</div>
+      <a href="hairetu.html" class="after_box_link">もう一回</a>
+    </div>
+  </div>
+
+  <div class="after js-after">
+    <div class="after_box">
+      <div class="after_box_txt">ごちそうさまでした〜</div>
+      <a href="hairetu.html" class="after_box_link">もう一回</a>
+    </div>
+  </div>
+
+<script src="/JS_PRACTICE_HTML/js/hairetu.js"></script>
+</body>
+</html>

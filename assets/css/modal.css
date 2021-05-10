@@ -1,0 +1,53 @@
+.contents {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  width: 40%;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.contents_button {
+  width: 200px;
+  height: 70px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.contents_button_txt {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(200, 200, 200, 0.5);
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+  cursor: pointer;
+}
+
+.modal_box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  top: 40%;
+}
+
+.modal_box_txt {
+  font-size: 20px;
+}
+/*# sourceMappingURL=modal.css.map */

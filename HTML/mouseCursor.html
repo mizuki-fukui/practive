@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/common.css" class="css">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <style>
+    body {
+      position: relative;
+      cursor: pointer;
+    }
+    body.active {
+       transform: scale(1.8);
+     }
+     body a {
+       cursor: none;
+     }
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #333;
+      /* margin: -20px 0 0 -20px; */
+      z-index: 5;
+      pointer-events: none;
+      background-color: #333;
+      border-radius: 50%;
+      /* opacity: 0; */
+      transition: transform .1s;
+     }
+     .cursor a:hover {
+       cursor: none;
+     }
+     .cursor.is-active {
+       background-color: red;
+     }
+     
+     .follower {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       background-color: rgba(16, 252, 252, 0.6);
+       z-index: 4;
+       transition: .3s;
+     }
+     .follower.is-active {
+       width: 50px;
+       height: 50px;
+       background-color: rgba(252, 197, 16, 0.774);
+     }
+
+     .contents {
+       padding: 100px 20px;
+       width: 80%;
+       height: 80%;
+       margin: 0 auto;
+       background-color: #eee;
+       text-align: center;
+     }
+     .contents_link {
+       padding-left: 70px;
+       padding-right: 70px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+       display: inline-block;
+       font-size: 30px;
+       text-decoration: none;
+       background-color: #333;
+       color: #fff;
+     }
+
+
+  </style>
+</head>
+<body>
+
+  <p class="cursor"></p>
+  <div class="follower"></div>
+
+  <div class="title">
+    <p class="title_txt">cursor</p>
+  </div>
+
+  <div class="contents">
+    <a href="#" class="contents_link">link</a>
+  </div>
+
+
+
+
+  <script src="/assets/JS/mouseCursor.js"></script>
+</body>
+</html>

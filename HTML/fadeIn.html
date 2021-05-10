@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/common.css" class="css">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="title">
+    <p class="title_txt">fade in</p>
+  </div>
+  <div class="container">
+    <div class="scroll">
+      <div class="scroll_arrow"></div>
+      <span class="scroll_txt">scroll</span>
+    </div>
+    <div class="contents js-fade">
+      <p class="contents_txt">contents</p>
+    </div>
+    <div class="contents js-fade">
+      <p class="contents_txt">contents</p>
+    </div>
+    <div class="contents js-fade">
+      <p class="contents_txt">contents</p>
+    </div>
+  </div>
+  
+  <style>
+    .contents {
+      margin-bottom: 50px;
+      width: 100%;
+      height: 300px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+    .contents_txt {
+      padding-top: 130px;
+      padding-bottom: 144px;
+    }
+    .scroll {
+      margin-bottom: 100px;
+      width: 100%;
+      height: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .scroll_arrow {
+      width: 2px;
+      height: 200px;
+      display: inline-block;
+      border: 1px solid #333;
+      position: relative;
+    }
+    .scroll_arrow::before,
+    .scroll_arrow::after {
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #333;
+      display: block;
+      position: absolute;
+      bottom: -2px;
+    }
+    .scroll_arrow::before {
+      transform-origin: bottom right;
+      transform: rotate(45deg);
+      left: -60px;
+    }
+    .scroll_arrow::after {
+      transform-origin: bottom left;
+      transform: rotate(-45deg);
+    }
+    .scroll_txt {
+      margin-left: 120px;
+      font-size: 20px;
+    }
+    .js-fade {
+      opacity: 0;
+      transition: opacity 1s, transform .6s;
+      transform: translateY(100px);
+    }
+    .active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  <script src="/assets/JS/fadeIn.js"></script>
+</body>
+</html>
